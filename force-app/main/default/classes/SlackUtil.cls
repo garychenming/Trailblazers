@@ -3,7 +3,6 @@ public with sharing class SlackUtil {
 
     }
 
-    @future(callout=true)
     public static void sendNotificationToSlack(String message) {
         HttpRequest request = new HttpRequest();
         request.setEndpoint('https://hooks.slack.com/services/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');
