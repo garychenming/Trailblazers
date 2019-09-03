@@ -60,7 +60,7 @@ public with sharing class TrailblazerTriggerHandler {
             // badgesStr += '\n\n Badge: ' + title + '\n Icon: ' + ((Map<String, Object>)badgesMap.get(title)).get('icon_url') + '\n Path: ' + ((Map<String, Object>)badgesMap.get(title)).get('path');
         }
 
-        String badgesStr = 'Total Points: `' + points + '` Total Badges: `' + badges + '` New Points: `' + pointsCount + '` New Badges: `' + badgeCount + '`';
+        String badgesStr = '*' + name + '* Total Points: `' + points + '` Total Badges: `' + badges + '` New Points: `' + pointsCount + '` New Badges: `' + badgeCount + '`';
         String message = JSON.serialize(new Map<String, Object>{'text' => badgesStr,'attachments' => attachments});
 
         // String message = JSON.serialize(new Map<String, String>{
