@@ -32,7 +32,7 @@ public with sharing class TrailblazersReptile implements Queueable, Database.All
 
             update trailblazer;
         } catch(Exception ex) {
-            insert new Log__c(ApexCodeName__c = 'TrailblazersReptile.execute', Data__c = JSON.serialize(ex));
+            insert new Log__c(ApexCodeName__c = 'TrailblazersReptile.execute', Data__c = ex.getMessage() + ex.getLineNumber());
         }
     }
 }
