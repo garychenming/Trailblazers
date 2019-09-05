@@ -96,13 +96,4 @@ public with sharing class TrailblazerTriggerHandler {
 
         return badgesMap;
     }
-
-    public class PointsData {
-        public PointsData(Datetime gotTime, Integer points) {
-            this.GotTime = gotTime;
-            this.Points = points;
-        }
-        public Datetime GotTime { get; set; }
-        public Integer Points { get; set; }
-    }
 }
